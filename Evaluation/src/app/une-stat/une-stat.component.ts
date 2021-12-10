@@ -8,6 +8,7 @@ import { Statistique } from '../models/statistique';
 })
 export class UneStatComponent implements OnInit {
   @Input() public uneStat!: Statistique;
+
   constructor() {}
 
   ngOnInit(): void {}
