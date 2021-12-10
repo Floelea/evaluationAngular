@@ -6,19 +6,16 @@ import { AppComponent } from './app.component';
 import { UneStatComponent } from './une-stat/une-stat.component';
 import { ListeStatsComponent } from './liste-stats/liste-stats.component';
 import { CreerStatsComponent } from './creer-stats/creer-stats.component';
-
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
     UneStatComponent,
     ListeStatsComponent,
-    CreerStatsComponent
+    CreerStatsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

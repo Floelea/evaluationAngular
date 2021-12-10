@@ -1,1 +1,25 @@
-<p>creer-stats works!</p>
+<form (ngSubmit)="validerFormulaire()">
+  <input
+    placeholder="titre de film"
+    type="text"
+    [(ngModel)]="titrestat"
+    name="titrestat"
+    required
+  />
+  <input
+    placeholder="Année du film"
+    type="text"
+    [(ngModel)]="anneestat"
+    name="anneestat"
+    required
+  />
+  <input
+    placeholder="genre de film "
+    type="text"
+    [(ngModel)]="tauxstat"
+    name="tauxstat"
+    required
+  />
+
+  <input type="submit" value="creer" />
+</form>
