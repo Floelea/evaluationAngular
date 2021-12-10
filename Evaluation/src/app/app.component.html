@@ -3,8 +3,19 @@
 <h2>Bitcoin</h2>
 <app-une-stat [uneStat]="bitcoin"></app-une-stat> -->
 
-<app-une-stat
-  (deleteMe)="supprimer(stat)"
-  *ngFor="let stat of tabStat"
-  [uneStat]="stat"
-></app-une-stat>
+<nav>
+  <ul>
+    <li>
+      <a routerLink="/liste-stats.component" routerLinkActive="active"
+        >liste-stats</a
+      >
+    </li>
+    <li>
+      <a routerLink="/creer-stats.component" routerLinkActive="active"
+        >creer-stats</a
+      >
+    </li>
+  </ul>
+</nav>
+
+<router-outlet></router-outlet>

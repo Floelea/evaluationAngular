@@ -14,8 +14,4 @@ export class AppComponent {
   constructor() {
     this.tabStat.push(this.vaccination, this.bitcoin);
   }
-  supprimer(uneStat: Statistique) {
-    let index = this.tabStat.indexOf(uneStat);
-    this.tabStat.splice(index, 1);
-  }
 }

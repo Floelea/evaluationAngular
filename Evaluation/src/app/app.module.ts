@@ -4,11 +4,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UneStatComponent } from './une-stat/une-stat.component';
+import { ListeStatsComponent } from './liste-stats/liste-stats.component';
+import { CreerStatsComponent } from './creer-stats/creer-stats.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UneStatComponent
+    UneStatComponent,
+    ListeStatsComponent,
+    CreerStatsComponent
   ],
   imports: [
     BrowserModule,
