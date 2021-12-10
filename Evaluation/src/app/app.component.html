@@ -3,4 +3,8 @@
 <h2>Bitcoin</h2>
 <app-une-stat [uneStat]="bitcoin"></app-une-stat> -->
 
-<app-une-stat *ngFor="let stat of tabStat" [uneStat]="stat"></app-une-stat>
+<app-une-stat
+  (deleteMe)="supprimer(stat)"
+  *ngFor="let stat of tabStat"
+  [uneStat]="stat"
+></app-une-stat>
